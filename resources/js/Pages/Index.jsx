@@ -2,6 +2,7 @@ import {useState,useEffect} from 'react'
 import { Link, Head } from '@inertiajs/inertia-react';
 import Hero from './Hero';
 import Loader from './Loader';
+import AboutUs from './AboutUs';
 
 
 
@@ -12,13 +13,16 @@ export default function Welcome(props) {
     useEffect(()=>{
         setTimeout(() => {
             setLoader(true)
-        }, 20000);
+        }, 2000);
     })
 
     return (
         <>
        {
-        loader ?  (<Hero props={props}/>) :  (<Loader/>)
+        loader ?  (<>
+        <Hero props={props}/>
+        <AboutUs/>
+        </>) :  (<Loader/>)
        }
        </>
     );

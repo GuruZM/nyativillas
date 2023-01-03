@@ -1,5 +1,6 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     content: [
@@ -13,7 +14,11 @@ module.exports = {
         extend: {
             fontFamily: {
                 sans: ['Nunito', ...defaultTheme.fontFamily.sans],
+                indi: ['Indie Flower'],
             },
+            colors: {
+                'prime-yellow': 'FFAE00',
+              },
         },
     },
 
