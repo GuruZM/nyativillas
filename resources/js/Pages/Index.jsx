@@ -3,6 +3,10 @@ import { Link, Head } from '@inertiajs/inertia-react';
 import Hero from './Hero';
 import Loader from './Loader';
 import AboutUs from './AboutUs';
+import Gallary from './Gallary';
+import Reviews from './Reviews';
+import Footer from './Footer';
+
 
 
 
@@ -21,7 +25,11 @@ export default function Welcome(props) {
        {
         loader ?  (<>
         <Hero props={props}/>
+   
         <AboutUs/>
+        <Gallary/>
+        <Reviews/>
+        <Footer/>
         </>) :  (<Loader/>)
        }
        </>

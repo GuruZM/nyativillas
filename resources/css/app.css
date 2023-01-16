@@ -13,10 +13,51 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,.6);
+    background-color: rgba(0,0,0,.8);
     /* background-color: #000000cc; */
   }
 .indie{
   font-family: 'Indie Flower,cursive';
  
 }
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* .socials::after{
+  content: "";
+  height:6px;
+  width:100px;
+  background-color:aqua;
+  margin-left:150px;
+  position:absolute;
+  top:36px;
+  left:200px;
+
+} */
